@@ -18,9 +18,9 @@ export function render() {
 
   HEADER.innerHTML = `
     <div class="top-row">
-      <a href="./" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
+      <a href="./jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
       <span>Nouveau jardin</span>
-      <a href="./settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
+      <a href="./jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
     </div>
     <div class="bottom-row">
     </div>

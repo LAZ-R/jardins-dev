@@ -6,10 +6,10 @@
 // Table de routes -> pour chaque chemin, on sait quel module ES charger.
 // Chaque module exporte une fonction: export function render() { ... }
 const routes = {
-  './settings': () => import('./views/settings/settings.view.js'),
-  './park': () => import('./views/park/park.view.js'),
-  './new-park': () => import('./views/new-park/new-park.view.js'),
-  './':         () => import('./views/homepage/homepage.view.js'), // fallback racine
+  './jardins-dev/settings': () => import('./views/settings/settings.view.js'),
+  './jardins-dev/park': () => import('./views/park/park.view.js'),
+  './jardins-dev/new-park': () => import('./views/new-park/new-park.view.js'),
+  './jardins-dev/':         () => import('./views/homepage/homepage.view.js'), // fallback racine
 };
 
 export async function renderURL(urlString) {
