@@ -69,6 +69,6 @@ function onCreateParkClick() {
     available_plants: [1, 2, 3, 4],
   });
   setUser(user);
-  navigation.navigate(`/park?id=${currentLastId + 1}`);
+  navigation.navigate(`/jardins-dev/park?id=${currentLastId + 1}`);
 }
 window.onCreateParkClick = onCreateParkClick;

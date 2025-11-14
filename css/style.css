@@ -353,6 +353,7 @@ input[type=file] {
   }
 
   &.entrance {
+    border: none;
     background-color: hsl(20, 20%, 60%);
     &.selected {
       &::after {
