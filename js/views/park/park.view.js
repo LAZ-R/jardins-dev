@@ -56,28 +56,28 @@ export function render() {
       if (cell.isEntrance) {
         cellDom.classList.add('entrance');
         let img = document.createElement('img');
-        img.setAttribute('src', `/medias/images/entrance.png`);
+        img.setAttribute('src', `./medias/images/entrance.png`);
         cellDom.appendChild(img);
       }
       if (cell.isRoad) {
         cellDom.classList.add('road');
         cellDom.classList.add(`road-${cell.roadId}`);
         let img = document.createElement('img');
-        img.setAttribute('src', `/medias/images/road-${cell.roadId}.png`);
+        img.setAttribute('src', `./medias/images/road-${cell.roadId}.png`);
         cellDom.appendChild(img);
       }
       if (cell.isPlant) {
         cellDom.classList.add('plant');
         cellDom.classList.add(`plant-${cell.plantId}`);
         let img = document.createElement('img');
-        img.setAttribute('src', `/medias/images/plant-${cell.plantId}.png`);
+        img.setAttribute('src', `./medias/images/plant-${cell.plantId}.png`);
         cellDom.appendChild(img);
       }
       if (cell.isWater) {
         cellDom.classList.add('water');
         cellDom.classList.add(`water-${cell.waterId}`);
         let img = document.createElement('img');
-        img.setAttribute('src', `/medias/images/water-${cell.waterId}.png`);
+        img.setAttribute('src', `./medias/images/water-${cell.waterId}.png`);
         cellDom.appendChild(img);
       }
     }
@@ -345,7 +345,7 @@ function getPlantsDom() {
     if (availablePlant != undefined) {
       str += `
       <button class="lzr-button lzr-square lzr-flat" onclick="onBuyPlantClick(${plant.id})" style="--price: '${getCommaFormatedString(plant.price, 0)} €';">
-        <img src=".medias/images/plant-${plant.id}.png"/>
+        <img src="./medias/images/plant-${plant.id}.png"/>
       </button>
       `;
     } else {
@@ -432,7 +432,7 @@ function onBuyPlantClick(plantId) {
   domCell.classList.add(`plant-${plantId}`);
   domCell.classList.remove('selected');
   let img = document.createElement('img');
-  img.setAttribute('src', `/medias/images/plant-${plantId}.png`);
+  img.setAttribute('src', `./medias/images/plant-${plantId}.png`);
   domCell.appendChild(img);
   currentSelectedCell = null;
 
@@ -448,7 +448,7 @@ function getRoadsDom() {
   for (let road of ROADS) {
     str += `
     <button class="lzr-button lzr-square lzr-flat" onclick="onBuyRoadClick(${road.id})" style="--price: '${getCommaFormatedString(road.price, 0)} €';">
-      <img src=".medias/images/road-${road.id}.png"/>
+      <img src="./medias/images/road-${road.id}.png"/>
     </button>`;
   }
   return str;
@@ -522,7 +522,7 @@ function onBuyRoadClick(roadId) {
   domCell.classList.add(`road-${roadId}`);
   domCell.classList.remove('selected');
   let img = document.createElement('img');
-  img.setAttribute('src', `/medias/images/road-${roadId}.png`);
+  img.setAttribute('src', `./medias/images/road-${roadId}.png`);
   domCell.appendChild(img);
   currentSelectedCell = null;
 
@@ -538,7 +538,7 @@ function getWatersDom() {
   for (let water of WATERS) {
     str += `
     <button class="lzr-button lzr-square lzr-flat" onclick="onBuyWaterClick(${water.id})" style="--price: '${getCommaFormatedString(water.price, 0)} €'; background-color: #056AB9;">
-      <img src=".medias/images/water-${water.id}.png"/>
+      <img src="./medias/images/water-${water.id}.png"/>
     </button>`;
   }
   return str;
@@ -613,7 +613,7 @@ function onBuyWaterClick(waterId) {
   domCell.classList.add(`water-${waterId}`);
   domCell.classList.remove('selected');
   let img = document.createElement('img');
-  img.setAttribute('src', `/medias/images/water-${waterId}.png`);
+  img.setAttribute('src', `./medias/images/water-${waterId}.png`);
   domCell.appendChild(img);
   currentSelectedCell = null;
 

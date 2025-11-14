@@ -1,7 +1,7 @@
 export const APP_NAME = "Jardins (DEV)";
-export const APP_VERSION = '0.0.0.2';
+export const APP_VERSION = '0.0.0.3';
 export const APP_LOCAL_STORAGE_ID = `jardins-dev-0009`;
 
 // CHANGELOG
 
-// v 0.0.0.2 - fix url images
+// v 0.0.0.3 - fix url images bis
