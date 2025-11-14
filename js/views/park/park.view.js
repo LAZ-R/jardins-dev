@@ -86,9 +86,9 @@ export function render() {
   // Start 
   HEADER.innerHTML = `
     <div class="top-row">
-      <a href="./jardins-dev/" class="centered-link" onclick="stopInterval()">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
+      <a href="/jardins-dev/" class="centered-link" onclick="stopInterval()">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
       <span>${currentPark.name}</span>
-      <a href="./jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary" onclick="stopInterval()">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
+      <a href="/jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary" onclick="stopInterval()">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
     </div>
     <div class="bottom-row">
       <span class="spaced-text"><span>Balance totale</span><span id="totalBalanceDom">${getCommaFormatedString(totalBalance)} €</span></span>

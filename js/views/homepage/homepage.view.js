@@ -18,9 +18,9 @@ export function render() {
   // Set default layout
   document.getElementById('header').innerHTML = `
     <div class="top-row">
-      <a href="./jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
+      <a href="/jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
       <span>${APP_NAME}</span>
-      <a href="./jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
+      <a href="/jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
     </div>
     <div class="bottom-row">
       <h1>Mes jardins</h1>
@@ -28,7 +28,7 @@ export function render() {
   `;
 
   document.getElementById('footer').innerHTML = `
-    <a href="./jardins-dev/new-park" class="lzr-button lzr-outlined lzr-primary" style="margin: auto">Nouveau jardin</a>
+    <a href="/jardins-dev/new-park" class="lzr-button lzr-outlined lzr-primary" style="margin: auto">Nouveau jardin</a>
   `;
 }
 
@@ -41,7 +41,7 @@ function getParksDom() {
     str += `
     <div class="park-block">
     <button class="lzr-button lzr-square lzr-outlined" onclick="onEditParkClick(${park.id})">${getSvgIcon('ellipsis-vertical')}</button>
-      <a href="./jardins-dev/park?id=${park.id}" class="lzr-button lzr-solid lzr-primary" style="width: 100%;">${park.name}</a>
+      <a href="/jardins-dev/park?id=${park.id}" class="lzr-button lzr-solid lzr-primary" style="width: 100%;">${park.name}</a>
     </div>
     `;
   }

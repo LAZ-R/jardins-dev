@@ -72,9 +72,9 @@ export function render() {
 
   document.getElementById('header').innerHTML = `
     <div class="top-row">
-      <a href="./jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
+      <a href="/jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
       <!-- <span>${APP_NAME}</span> -->
-      <a href="./jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
+      <a href="/jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
     </div>
     <div class="bottom-row"></div>
   `;

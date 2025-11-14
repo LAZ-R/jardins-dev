@@ -23,17 +23,16 @@ document.getElementsByClassName('lzr')[0].style = `--theme: '${user.PREFERED_THE
 // Set default layout
 document.getElementById('header').innerHTML = `
   <div class="top-row">
-    <a href="./jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
+    <a href="/jardins-dev/" class="centered-link">${getSvgIcon('lzr', 'xl', 'var(--color--primary)')}</a>
     <!-- <span>${APP_NAME}</span> -->
-    <a href="./jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
+    <a href="/jardins-dev/settings" class="lzr-button lzr-outlined lzr-square lzr-primary">${getSvgIcon('gear', 'm', 'var(--color--primary)')}</a>
   </div>
   <div class="bottom-row"></div>
 `;
+console.log('APP.JS ----------------------------------------')
 console.log(`location.href: ${location.href}`);
 console.log(`location.origin: ${location.origin}`);
 const url = new URL(location.href, location.origin);
 console.log(`url.pathname: ${url.pathname}`);
-const path = url.pathname;
-console.log(path);
 // EXECUTION //////////////////////////////////////////////////////////////////////////////////////
 Router.renderURL(location.href);

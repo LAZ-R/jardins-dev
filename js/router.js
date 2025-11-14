@@ -6,16 +6,17 @@
 // Table de routes -> pour chaque chemin, on sait quel module ES charger.
 // Chaque module exporte une fonction: export function render() { ... }
 const routes = {
-  './jardins-dev/settings': () => import('./views/settings/settings.view.js'),
-  './jardins-dev/park': () => import('./views/park/park.view.js'),
-  './jardins-dev/new-park': () => import('./views/new-park/new-park.view.js'),
-  './jardins-dev/':         () => import('./views/homepage/homepage.view.js'), // fallback racine
+  '/jardins-dev/settings': () => import('./views/settings/settings.view.js'),
+  '/jardins-dev/park':     () => import('./views/park/park.view.js'),
+  '/jardins-dev/new-park': () => import('./views/new-park/new-park.view.js'),
+  '/jardins-dev/':         () => import('./views/homepage/homepage.view.js'), // fallback racine
+  '/':                     () => import('./views/homepage/homepage.view.js'), // fallback racine
 };
 
 export async function renderURL(urlString) {
   try {
     // Convertit la string en URL pour extraire le pathname
-    const url = new URL(urlString, location.origin);
+    const url = new URL(urlString, location.href);
     const path = url.pathname;
     console.log(path);
 
