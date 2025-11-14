@@ -1,4 +1,4 @@
-var cacheName = 'jardins-dev-0004';
+var cacheName = 'jardins-dev-0006';
 var filesToCache = [
   './',
   './index.html',
@@ -25,4 +25,4 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-const version = '0.0.0.5';
+const version = '0.0.0.6';

@@ -17,6 +17,7 @@ export async function renderURL(urlString) {
     // Convertit la string en URL pour extraire le pathname
     const url = new URL(urlString, location.origin);
     const path = url.pathname;
+    console.log(path);
 
     // Sélectionne et charge le module de page (import dynamique)
     const loadPageModule = routes[path] || routes['/'];

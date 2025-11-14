@@ -29,6 +29,11 @@ document.getElementById('header').innerHTML = `
   </div>
   <div class="bottom-row"></div>
 `;
-
+console.log(`location.href: ${location.href}`);
+console.log(`location.origin: ${location.origin}`);
+const url = new URL(location.href, location.origin);
+console.log(`url.pathname: ${url.pathname}`);
+const path = url.pathname;
+console.log(path);
 // EXECUTION //////////////////////////////////////////////////////////////////////////////////////
 Router.renderURL(location.href);

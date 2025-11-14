@@ -1,6 +1,6 @@
 # Jardins (DEV)
 `pre-alpha`  
-`v 0.0.0.5`
+`v 0.0.0.6`
 
 ## ...
     
