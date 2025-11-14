@@ -345,7 +345,7 @@ function getPlantsDom() {
     if (availablePlant != undefined) {
       str += `
       <button class="lzr-button lzr-square lzr-flat" onclick="onBuyPlantClick(${plant.id})" style="--price: '${getCommaFormatedString(plant.price, 0)} €';">
-        <img src="/medias/images/plant-${plant.id}.png"/>
+        <img src=".medias/images/plant-${plant.id}.png"/>
       </button>
       `;
     } else {
@@ -448,7 +448,7 @@ function getRoadsDom() {
   for (let road of ROADS) {
     str += `
     <button class="lzr-button lzr-square lzr-flat" onclick="onBuyRoadClick(${road.id})" style="--price: '${getCommaFormatedString(road.price, 0)} €';">
-      <img src="/medias/images/road-${road.id}.png"/>
+      <img src=".medias/images/road-${road.id}.png"/>
     </button>`;
   }
   return str;
@@ -538,7 +538,7 @@ function getWatersDom() {
   for (let water of WATERS) {
     str += `
     <button class="lzr-button lzr-square lzr-flat" onclick="onBuyWaterClick(${water.id})" style="--price: '${getCommaFormatedString(water.price, 0)} €'; background-color: #056AB9;">
-      <img src="/medias/images/water-${water.id}.png"/>
+      <img src=".medias/images/water-${water.id}.png"/>
     </button>`;
   }
   return str;
